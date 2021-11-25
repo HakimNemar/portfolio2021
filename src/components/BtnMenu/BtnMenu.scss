@@ -1,0 +1,64 @@
+.burger {
+    // position: fixed;
+    // right: 12px;
+    // top: 12px;
+    cursor: none;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 4;
+
+    .burgerline {
+        width: 30px;
+        height: 2px;
+        background-color: $primary;
+        margin: 3px 0;
+
+        background: linear-gradient(to left, $primary, #fff, $primary) right;
+        background-size: 200%;
+        transition: all 0.2s ease-out;
+
+        &:nth-child(2) {
+            transition-delay: 0.05s;
+        }
+
+        &:nth-child(3) {
+            transition-delay: 0.1s;
+        }
+    }
+
+    .isOpen2 {
+        width: 0;
+    }
+
+    .isOpen {
+        width: 40px;
+        transform: rotate(42deg);
+        position: absolute;
+    }
+
+    .isOpen3 {
+        width: 40px;
+        transform: rotate(-42deg);
+        position: absolute;
+    }
+
+    &:hover {
+        .burgerline {
+            background-position: left;
+
+            &:nth-child(2) {
+                transition-delay: 0.05s;
+            }
+
+            &:nth-child(3) {
+                transition-delay: 0.1s;
+            }
+        }
+    }
+}

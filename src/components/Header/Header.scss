@@ -1,0 +1,28 @@
+.header {
+    display: grid;
+    grid-template-columns: 60px 1fr min-content;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+    .logo {
+        // position: fixed;
+        // left: 15px;
+        // top: 15px;
+        // z-index: 99;
+        grid-row: 1;
+        grid-column: 1;
+
+        svg {
+            fill: $primary;
+            width: 50px;
+            height: auto;
+        }
+    }
+    .burger {
+        grid-row: 1;
+        grid-column: 23;
+    }
+}

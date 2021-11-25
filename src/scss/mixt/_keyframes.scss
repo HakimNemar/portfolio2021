@@ -1,0 +1,34 @@
+@keyframes blend {
+    0% {
+        transform: translate(-50%, -50%) rotate(-45deg) scaleY(5);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-45deg) scaleY(1);
+    }
+}
+
+@keyframes fadeTitle {
+    0% {
+        transform: translateY(-150px) rotate(-3deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeTitle2 {
+    0% {
+        transform: translateY(-150px) rotate(-3deg);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(-150px) rotate(-3deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+    }
+}

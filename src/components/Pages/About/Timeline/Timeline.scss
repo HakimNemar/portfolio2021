@@ -1,0 +1,112 @@
+.timline {
+    position: relative;
+    margin: 50px 0;
+    grid-row: 3;
+    grid-column: 1 / 23;
+
+    .line {
+        height: 2400px;
+        width: 1px;
+        // background-color: $bleu;
+        background-color: $grey;
+        margin: 0 auto;
+
+        @include media("<laptop") {
+            position: relative;
+            left: 200px;
+        }
+    }
+
+    .rond {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $tertiaire;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        // border: 1px solid $grey;
+
+        @include media("<laptop") {
+            left: calc(50% + 200px);
+        }
+    }
+
+    // 2400 - (30*2) + 30 / 9 ~= 264
+    @for $i from 0 through 10 {
+        .r#{$i} {
+            top: 0px + (264 * ($i - 1));
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $secondary;
+                border-radius: 50%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+
+    .box {
+        width: 400px;
+        min-height: 200px;
+        padding: 20px;
+        border-radius: 3px;
+        height: auto;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba($color: $beige2, $alpha: 1);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+
+        @include media("<laptop") {
+            left: calc(50% - 50px);
+        }
+
+        .title {
+            font-size: 20px;
+            line-height: 29px;
+            // font-family: "Playfair Display SC";
+        }
+
+        .entreprise {
+            margin-top: 10px;
+        }
+    }
+
+    @for $i from 0 through 10 {
+        .b#{$i} {
+            top: 0px + (264 * ($i - 1));
+
+            @include media(">=laptop") {
+                .date {
+                    position: absolute;
+                    margin-top: -13px;
+                    width: 80px;
+                }
+
+                @if ($i % 2 == 1) {
+                    left: calc(50% - 270px);
+
+                    .date {
+                        right: calc(50% - 420px); // 415 ?
+                        text-align: left;
+                    }
+                } @else {
+                    left: calc(50% + 270px);
+
+                    .date {
+                        left: calc(50% - 420px);
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

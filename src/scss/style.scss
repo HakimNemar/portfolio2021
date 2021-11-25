@@ -1,0 +1,60 @@
+@import "./mixt/mixins";
+@import "./mixt/keyframes";
+@import "./mixt/variables";
+@import "../../node_modules/destyle.css/destyle";
+@import "../../node_modules/include-media/dist/include-media";
+
+@include fontD("Playfair Display SC", "PlayfairDisplay-VariableFont_wght.ttf");
+@include fontP("Public Sans - Thin _ Regular", "PublicSans-Regular.ttf");
+
+html {
+	color: $black;
+	font-size: 14px;
+	line-height: 1;
+	scroll-behavior: smooth;
+	background-color: $tertiaire;
+
+	::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: $primary;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #000;
+	}
+
+	/* Works on Firefox */
+	scrollbar-width: thin;
+	scrollbar-color: $primary transparent;
+}
+
+body {
+	font-family: "Public Sans - Thin _ Regular";
+	cursor: none;
+}
+
+::selection {
+	background-color: $grey;
+	color: #fff;
+}
+
+@import "../components/Header/Header.scss";
+@import "../components/Footer/Footer.scss";
+
+@import "../components/Mouse/Mouse.scss";
+@import "../components/Menu/Menu.scss";
+@import "../components/BtnMenu/BtnMenu.scss";
+
+@import "../components/Home/Home.scss";
+@import "../components/Pages/Intro/Intro.scss";
+@import "../components/Pages/Competence/Competence.scss";
+@import "../components/Pages/Projects/Projects.scss";
+@import "../components/Pages/Contact/Contact.scss";
+@import "../components/Pages/About/About.scss";
