@@ -1,6 +1,13 @@
 export const DataParcours = [
     {
         title: "Intégrateur Développeur Web",
+        entreprise: "Groupe Duval",
+        contrat: "WebMaster CDI",
+        // ecole: "Samsung CAMPUS",
+        date: "2021 / 2022",
+    },
+    {
+        title: "Intégrateur Développeur Web",
         entreprise: "Adelios",
         contrat: "Alternance",
         // ecole: "Samsung CAMPUS",
@@ -62,7 +69,7 @@ export const DataRealisations = [
         title: "ADNA",
         description: "ADNA est le résultat d’une fusion de 4 cabinets d’avocat performant en afrique.",
         url: "https://adnalaw.com/",
-        img: "lafrenchcom.jpg"
+        img: "adna2.jpg"
     },
     {
         title: "LaFrenchCom",
@@ -74,7 +81,7 @@ export const DataRealisations = [
         title: "Blueprint.",
         description: "Site E-commerce avec espace utilisateur et back admin complet. (statistiques, gestion de stock etc...).",
         url: "https://e-8commerce-client.herokuapp.com/",
-        img: "lafrenchcom.jpg"
+        img: "blueprint.jpg"
     },
     {
         title: "My Snapchat",
@@ -86,12 +93,12 @@ export const DataRealisations = [
         title: "Puissance4",
         description: "Création d'un plugin jQuery pour un puissance 4 dynamique.",
         url: "https://mypuissance4.herokuapp.com/",
-        img: "lafrenchcom.jpg"
+        img: "puissance4.jpg"
     },
     {
         title: "Portfolio 2020",
         description: "Mon premier portfolio réaliser lors de ma première année",
         url: "https://hakimnemar.github.io/portfolio/#/",
-        img: "lafrenchcom.jpg"
+        img: "portfolio.jpg"
     }
 ]

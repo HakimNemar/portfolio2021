@@ -1,11 +1,11 @@
 .timline {
     position: relative;
-    margin: 50px 0;
+    margin: 100px 0;
     grid-row: 3;
     grid-column: 1 / 23;
 
     .line {
-        height: 2400px;
+        height: 2645px; // 2400
         width: 1px;
         // background-color: $bleu;
         background-color: $grey;
@@ -33,7 +33,7 @@
     }
 
     // 2400 - (30*2) + 30 / 9 ~= 264
-    @for $i from 0 through 10 {
+    @for $i from 0 through 15 {
         .r#{$i} {
             top: 0px + (264 * ($i - 1));
 
@@ -80,7 +80,7 @@
         }
     }
 
-    @for $i from 0 through 10 {
+    @for $i from 0 through 15 {
         .b#{$i} {
             top: 0px + (264 * ($i - 1));
 

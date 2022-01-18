@@ -1,27 +1,25 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { DataParcours } from '../../../Common/data';
+// import { Parallax } from '../../../Common/parallax';
 
 export default function Timeline() {
     const [data, setData] = useState(Array);
+    const box = useRef(null);
 
     useEffect(() => {
         setData(DataParcours);
+
+        // new Parallax({
+        //     element: [box.current]
+        // });
+
+        console.log(box.current);
+
     }, []);
 
     return (
         <div className="timline">
             <div className="line"></div>
-
-            {/* 
-            <div className="rond r1" data-anim="1"></div>
-            <div className="rond r2" data-anim="2"></div>
-            <div className="rond r3" data-anim="3"></div>
-            <div className="rond r4" data-anim="4"></div>
-
-            <div className="box b1" data-anim="1"><h2>test</h2></div>
-            <div className="box b2" data-anim="2"><h2>test</h2></div>
-            <div className="box b3" data-anim="3"><h2>test</h2></div>
-            <div className="box b4" data-anim="4"><h2>test</h2></div> */}
 
             {
                 data.length > 0 &&
@@ -30,7 +28,7 @@ export default function Timeline() {
 
                     return (
                         <div key={id} className="cart">
-                            <div className={"box b" + key} data-anim={key}>
+                            <div className={"box b" + key} data-anim={key} ref={box}>
                                 {e.date &&
                                     <h6 className="date">{e.date}</h6>
                                 }

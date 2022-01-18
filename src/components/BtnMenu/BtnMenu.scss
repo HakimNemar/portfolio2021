@@ -1,7 +1,4 @@
 .burger {
-    // position: fixed;
-    // right: 12px;
-    // top: 12px;
     cursor: none;
     background-color: #fff;
     width: 80px;
@@ -12,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 4;
+    box-shadow: 0px 0px 10px 1px #eaeaea;
 
     .burgerline {
         width: 30px;
