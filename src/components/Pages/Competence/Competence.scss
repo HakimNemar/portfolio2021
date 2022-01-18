@@ -80,7 +80,7 @@
         }
 
         .skillBar {
-            height: 28px;
+            height: 25px;
             width: 100%;
             background-color: #fff;
             margin-bottom: 20px;
@@ -89,22 +89,27 @@
 
             .progress1,
             .progress2,
-            .progress3 {
+            .progress3,
+            .progress4 {
                 height: 100%;
                 border-radius: 2px 0px 0px 2px;
                 background-color: $secondary;
             }
 
             .progress1 {
-                width: 90%;
+                width: 80%;
             }
 
             .progress2 {
-                width: 75%;
+                width: 85%;
             }
 
             .progress3 {
                 width: 50%;
+            }
+
+            .progress4 {
+                width: 70%;
             }
         }
     }

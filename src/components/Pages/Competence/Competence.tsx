@@ -14,13 +14,19 @@ export default function Competence() {
 
     return (
         <section id="competence" className="competence" ref={section}>
-            <h1>Mes Compétence à votre service</h1>
+            <h1>Mes Compétences à votre service</h1>
             <div className='skill'>
+                <div className="skillDiv">
+                    <h2>Wordpress</h2>
+                    <div className="skillBar">
+                        <div className="progress1"></div>
+                    </div>
+                </div>
                 <div className="skillDiv">
                     <h2>Frontend</h2>
                     <h3>React, JavaScript & TypeScript, SASS, jQuery, HTML, CSS, Bootstrap</h3>
                     <div className="skillBar">
-                        <div className="progress1"></div>
+                        <div className="progress2"></div>
                     </div>
                 </div>
                 <div className="skillDiv">
@@ -32,9 +38,9 @@ export default function Competence() {
                 </div>
                 <div className="skillDiv">
                     <h2>Autres</h2>
-                    <h3>CMS Wordpress, Git, Github & Gitlab, MySQL</h3>
+                    <h3>Git, Github & Gitlab, MySQL, Serveur</h3>
                     <div className="skillBar">
-                        <div className="progress2"></div>
+                        <div className="progress4"></div>
                     </div>
                 </div>
             </div>

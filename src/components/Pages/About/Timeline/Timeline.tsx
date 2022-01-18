@@ -45,6 +45,9 @@ export default function Timeline() {
                                     :
                                     <br />
                                 }
+                                <div className='divLogo'>
+                                    <img className='logo' src={require(`../../../../assets/img/logo/${e.logo}`).default} alt={e.title} />
+                                </div>
                             </div>
                             <div className={"rond r" + key} data-anim={key}></div>
                         </div>
