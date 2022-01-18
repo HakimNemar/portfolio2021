@@ -66,10 +66,16 @@ export const DataParcours = [
 
 export const DataRealisations = [
     {
+        title: "Groupe Duval",
+        description: "Acteur familial français de l’immobilier employant plus de 4 000 collaborateurs pour un CA de 700 millions d’euros.",
+        url: "https://groupeduval.com/",
+        img: "gd.jpg"
+    },
+    {
         title: "ADNA",
         description: "ADNA est le résultat d’une fusion de 4 cabinets d’avocat performant en afrique.",
         url: "https://adnalaw.com/",
-        img: "adna2.jpg"
+        img: "adna.jpg"
     },
     {
         title: "LaFrenchCom",
@@ -83,12 +89,12 @@ export const DataRealisations = [
         url: "https://e-8commerce-client.herokuapp.com/",
         img: "blueprint.jpg"
     },
-    {
-        title: "My Snapchat",
-        description: "Reproduction des fonctionnalité de Snapchat en utilisant l'API fournie par EPITECH.",
-        url: "http://our-snapchat.surge.sh/",
-        img: "lafrenchcom.jpg"
-    },
+    // {
+    //     title: "My Snapchat",
+    //     description: "Reproduction des fonctionnalité de Snapchat en utilisant l'API fournie par EPITECH.",
+    //     url: "http://our-snapchat.surge.sh/",
+    //     img: "lafrenchcom.jpg"
+    // },
     {
         title: "Puissance4",
         description: "Création d'un plugin jQuery pour un puissance 4 dynamique.",

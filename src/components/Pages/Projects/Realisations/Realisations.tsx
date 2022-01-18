@@ -15,7 +15,7 @@ export default function Realisations() {
                 data.map((e: any, id) => {
                     return (
                         <li key={id}>
-                            <a href={e.url}>
+                            <a href={e.url} target="_blank" rel="noreferrer">
                                 <figure>
                                     <img src={require(`../../../../assets/img/${e.img}`).default} alt={e.title} />
                                     <figcaption>

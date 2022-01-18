@@ -64,6 +64,8 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%);
+        visibility: hidden;
+        animation-duration: 1.6s;
 
         @include media("<laptop") {
             left: calc(50% - 50px);

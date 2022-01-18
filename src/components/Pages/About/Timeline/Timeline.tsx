@@ -1,20 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { DataParcours } from '../../../Common/data';
-// import { Parallax } from '../../../Common/parallax';
+import { BoxAnim } from '../../../Common/boxAnim';
 
 export default function Timeline() {
     const [data, setData] = useState(Array);
-    const box = useRef(null);
+    const box = useRef(new Array());
 
     useEffect(() => {
         setData(DataParcours);
 
-        // new Parallax({
-        //     element: [box.current]
-        // });
-
-        console.log(box.current);
-
+        new BoxAnim({
+            element: [box.current]
+        });
     }, []);
 
     return (
@@ -28,7 +25,7 @@ export default function Timeline() {
 
                     return (
                         <div key={id} className="cart">
-                            <div className={"box b" + key} data-anim={key} ref={box}>
+                            <div className={"box b" + key} id={"b" + key} data-anim={key} ref={(element) => box.current.push(element)}>
                                 {e.date &&
                                     <h6 className="date">{e.date}</h6>
                                 }

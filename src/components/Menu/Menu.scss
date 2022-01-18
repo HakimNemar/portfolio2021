@@ -5,12 +5,14 @@
     z-index: 3;
     height: 100vh;
     background-color: #fff;
-    padding: 90px 100px;
+    padding: 130px 100px 90px;
     transform: translateX(440px);
     transition: transform 1.5s;
     box-shadow: -1px 0px 10px $beige2;
 
-    ul {
+    .nav {
+        height: 100%;
+
         li {
             font-family: "Playfair Display SC";
             text-transform: uppercase;
@@ -40,6 +42,17 @@
                     }
                 }
             }
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+
+        .iconLink {
+            width: 28px;
+            height: 28px;
+            margin: 5px 10px;
         }
     }
 }
