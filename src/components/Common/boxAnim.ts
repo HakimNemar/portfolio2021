@@ -13,17 +13,13 @@ export class BoxAnim {
     }
 
     private onScroll = () => {
-
         this.element[0].map((e: any) => {
             return requestAnimationFrame(() => this.updatePos(e));
         });
-
-
     };
 
     private updatePos = (element: any) => {
         if (element.getBoundingClientRect() && element.getBoundingClientRect() !== null) {
-
             let rect = element.getBoundingClientRect(),
                 viewPort = true,
                 viewPort2 = true;
@@ -33,10 +29,15 @@ export class BoxAnim {
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             ) {
                 viewPort = false;
-                element.style.visibility = "visible";
-                element.style.animationName = "fadeBox";
-            }
 
+                if ((element as HTMLElement).classList.contains('barProgress')) {
+                    element.style.animationName = "barProgress";
+                } else {
+                    // Pour les cart Experience
+                    element.style.visibility = "visible";
+                    element.style.animationName = "fadeBox";
+                }
+            }
         }
     };
 }
