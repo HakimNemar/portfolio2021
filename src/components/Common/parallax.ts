@@ -50,7 +50,7 @@ export class Parallax {
         }
         else if (e.id === 'contact') {
             let factor = this.scrolledAmount / this.windowHeight;
-            const transform = `translateY(-${factor * 5 - 20}%)`;
+            const transform = `translateY(-${factor * 5 - 35}%)`;
             e.style.transform = transform;
         }
         else {

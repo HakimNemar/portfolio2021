@@ -17,7 +17,7 @@ export default function Projects() {
     return (
         <section id="projets" className="projets" ref={section}>
             <div className="titleGroup">
-                <h1 className="title">Project</h1>
+                <h1 className="title">Projets</h1>
                 <h2 className="title2">Mes réalisations</h2>
             </div>
 

@@ -2,6 +2,7 @@
     position: relative;
     transition: transform 0.5s ease-out;
     // padding: 90px;
+    margin-bottom: -225px;
     @include gridLayout;
 
     @import "./Timeline/Timeline.scss";
