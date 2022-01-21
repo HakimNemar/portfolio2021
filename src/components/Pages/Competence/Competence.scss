@@ -3,8 +3,7 @@
     position: relative;
     transition: transform 0.5s ease-out;
     grid-template-rows: min-content;
-    background-color: #fff;
-    padding: 180px 90px 90px;
+    padding: 180px 90px 150px;
     @include gridLayout;
     max-width: initial;
 

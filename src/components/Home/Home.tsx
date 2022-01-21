@@ -4,6 +4,7 @@ import Intro from '../Pages/Intro/Intro';
 import Competence from '../Pages/Competence/Competence';
 import Projects from '../Pages/Projects/Projects';
 import About from '../Pages/About/About';
+import VignetteResponsive from '../Pages/VignetteResponsive/VignetteResponsive';
 import Contact from '../Pages/Contact/Contact';
 import Footer from '../Footer/Footer';
 
@@ -35,6 +36,8 @@ export default function Index() {
             <Projects />
 
             <About />
+
+            <VignetteResponsive />
 
             <Contact />
 

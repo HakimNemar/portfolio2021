@@ -19,10 +19,13 @@ export default function Intro() {
             <div id="blend" className="blend" ref={blend}></div>
             <h1>
                 <div>
-                    <div className="first">Développeur</div>
+                    <div className="first">Intégrateur</div>
                 </div>
                 <div>
-                    <div className="seconde">Full Stack.</div>
+                    <div className="seconde">Développeur</div>
+                </div>
+                <div>
+                    <div className="third">Web.</div>
                 </div>
             </h1>
             <h3>Bienvenue sur mon Portfolio ! Réalisée en 2021 par mes soins</h3>

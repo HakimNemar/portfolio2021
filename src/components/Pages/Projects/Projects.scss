@@ -1,9 +1,11 @@
 .projets {
     position: relative;
     transition: transform 0.5s ease-out;
-    padding: 300px 90px 90px 90px;
+    padding: 200px 90px 90px 90px;
     min-height: 100vh;
+    background-color: #fff;
     @include gridLayout;
+    max-width: initial;
 
     @import "./Realisations/Realisations.scss";
 }
