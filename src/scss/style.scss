@@ -73,6 +73,10 @@ body {
 			display: flex;
 			// overflow: hidden;
 
+			.text {
+				margin: auto;
+			}
+
 			@include media("<laptopM") {
 				font-size: 100px;
 				letter-spacing: 0.3em;
