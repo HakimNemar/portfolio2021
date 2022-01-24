@@ -8,7 +8,7 @@
 	padding-left: $gridMargin;
 	padding-right: $gridMargin;
 
-	@include media("<tablet") {
+	@include media("<=tablet") {
 		padding-left: $padding;
 		padding-right: $padding;
 	}

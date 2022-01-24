@@ -1,5 +1,5 @@
 .competence {
-    min-height: 100vh;
+    // min-height: 100vh;
     position: relative;
     transition: transform 0.5s ease-out;
     grid-template-rows: min-content;
@@ -7,8 +7,21 @@
     @include gridLayout;
     max-width: initial;
 
+    @include media("<laptop") {
+        padding-bottom: 190px;
+    }
+
+    @include media("<=tablet") {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
     .titleGroup {
         margin-bottom: 250px;
+
+        @include media("<laptop") {
+            margin-bottom: 180px;
+        }
     }
 
     .skillDiv {
@@ -43,6 +56,10 @@
             font-size: 24px;
             letter-spacing: 1.29px;
             margin: 20px 0;
+
+            @include media("<laptop") {
+                font-size: 20px;
+            }
         }
 
         h3 {
@@ -103,6 +120,10 @@
             font-size: 24px;
             letter-spacing: 1.29px;
             margin: 20px 0;
+
+            @include media("<laptop") {
+                font-size: 20px;
+            }
         }
 
         ul {
@@ -113,6 +134,10 @@
                 font-size: 18px;
                 color: $grey2;
                 position: relative;
+
+                @include media("<laptop") {
+                    font-size: 14px;
+                }
 
                 &::before {
                     content: "";

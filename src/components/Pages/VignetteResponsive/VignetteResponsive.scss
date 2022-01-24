@@ -23,6 +23,10 @@
 
         img {
             margin: 0 auto -40px;
+
+            @include media("<=tablet") {
+                height: 300px;
+            }
         }
     }
 }

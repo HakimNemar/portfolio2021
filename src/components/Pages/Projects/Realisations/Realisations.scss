@@ -9,14 +9,21 @@
     max-width: 1475px;
 
     li {
+        @include media("<laptop") {
+            width: 45%;
+        }
+
         figure {
             width: 400px;
-            background-color: $tertiaire;
             overflow: hidden;
             position: relative;
-
             display: grid;
             height: 400px;
+
+            @include media("<laptop") {
+                width: 100%;
+                height: 370px;
+            }
 
             &:hover {
                 img {
@@ -51,18 +58,30 @@
                 background-color: #ebebec;
                 position: relative;
                 transition: all 0.3s;
-
                 align-self: end;
+
+                @include media("<=tablet") {
+                    padding: 5px;
+                }
 
                 p {
                     padding: 20px;
                     transition: all 0.3s;
+
+                    @include media("<=tablet") {
+                        padding: 15px;
+                    }
 
                     &:nth-child(1) {
                         font-weight: 700;
                         text-transform: uppercase;
                         position: relative;
                         font-size: 20px;
+
+                        @include media("<laptop") {
+                            font-size: 18px;
+                            letter-spacing: 0.1em;
+                        }
 
                         &::before {
                             content: "";
@@ -71,6 +90,10 @@
                             width: 30px;
                             background-color: $secondary;
                             bottom: -2px;
+
+                            @include media("<=tablet") {
+                                height: 2px;
+                            }
                         }
 
                         &::after {
@@ -90,6 +113,10 @@
                     &:nth-child(2) {
                         font-size: 18px;
                         color: $grey2;
+
+                        @include media("<laptop") {
+                            font-size: 14px;
+                        }
                     }
                 }
             }

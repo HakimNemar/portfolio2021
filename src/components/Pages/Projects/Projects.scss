@@ -7,5 +7,9 @@
     @include gridLayout;
     max-width: initial;
 
+    @include media("<laptop") {
+        padding-top: 130px;
+    }
+
     @import "./Realisations/Realisations.scss";
 }

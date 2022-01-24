@@ -5,6 +5,14 @@
     margin-bottom: -225px;
     @include gridLayout;
 
+    @include media("<laptopM") {
+        margin-bottom: -375px;
+    }
+
+    @include media("<=tablet") {
+        margin-bottom: -220px;
+    }
+
     @import "./Timeline/Timeline.scss";
 
     .aboutMe {
@@ -15,5 +23,10 @@
         padding-top: 25px;
         padding-bottom: 50px;
         text-align: justify;
+
+        @include media("<laptop") {
+            font-size: 14px;
+            line-height: 24px;
+        }
     }
 }
