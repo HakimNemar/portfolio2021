@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
+import { ScrollTitle } from '../../Common/scrollTitle';
 import Realisations from './Realisations/Realisations';
 
 // creer function qui creer un projets pour l'afficher ici en bouclant dessus cme thebuyer 
@@ -7,17 +8,21 @@ import Realisations from './Realisations/Realisations';
 
 export default function Projects() {
     const section = useRef(null);
+    const title = useRef(null);
 
     useEffect(() => {
         new Parallax({
             element: [section.current]
         });
+        new ScrollTitle(
+            title.current
+        )
     }, []);
 
     return (
         <section id="projets" className="projets" ref={section}>
             <div className="titleGroup">
-                <h1 className="title">Projets</h1>
+                <h1 className="title" ref={title}><span className='text'>Projets</span></h1>
                 <h2 className="title2">Mes réalisations</h2>
             </div>
 

@@ -1,7 +1,6 @@
 .about {
     position: relative;
     transition: transform 0.5s ease-out;
-    // padding: 90px;
     margin-bottom: -225px;
     @include gridLayout;
 
@@ -11,6 +10,16 @@
 
     @include media("<=tablet") {
         margin-bottom: -220px;
+    }
+
+    @include media("<mobileXL") {
+        margin-top: -250px;
+        margin-bottom: -405px;
+    }
+
+    @include media("<mobileL") {
+        margin-bottom: -570px;
+        padding: 30px;
     }
 
     @import "./Timeline/Timeline.scss";

@@ -14,7 +14,7 @@ export default function BtnMenu({ menu }: Props) {
         link.forEach((e) => {
             e.children[0].addEventListener('click', function () {
                 if (menu) {
-                    menu.style.transform = "translateX(440px)";
+                    menu.style.transform = "translateX(540px)";
                     setIsOpen(false);
                 }
             });
@@ -27,7 +27,7 @@ export default function BtnMenu({ menu }: Props) {
                 menu.style.transform = "translateX(0)";
                 setIsOpen(true);
             } else {
-                menu.style.transform = "translateX(440px)";
+                menu.style.transform = "translateX(540px)";
                 setIsOpen(false);
             }
         }

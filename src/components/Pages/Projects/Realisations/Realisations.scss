@@ -13,6 +13,10 @@
             width: 45%;
         }
 
+        @include media("<tablet") {
+            width: 100%;
+        }
+
         figure {
             width: 400px;
             overflow: hidden;
@@ -23,6 +27,11 @@
             @include media("<laptop") {
                 width: 100%;
                 height: 370px;
+            }
+
+            @include media("<tablet") {
+                width: 320px;
+                margin: auto;
             }
 
             &:hover {
@@ -107,6 +116,10 @@
                             border-width: 0 7px 16px 7px;
                             border-color: transparent transparent #ebebec transparent;
                             transition: all 0.3s;
+
+                            @include media("<laptop") {
+                                top: -20px;
+                            }
                         }
                     }
 

@@ -16,6 +16,10 @@
         padding-bottom: 90px;
     }
 
+    @include media("<mobileXL") {
+        padding-bottom: 160px;
+    }
+
     .titleGroup {
         margin-bottom: 250px;
 
@@ -50,6 +54,10 @@
 
         @include media("<laptop") {
             grid-column: 1 / 12;
+        }
+
+        @include media("<tablet") {
+            grid-column: 1 / 23;
         }
 
         h2 {
@@ -113,6 +121,11 @@
 
         @include media("<desktop") {
             grid-column: 14 / 23;
+        }
+
+        @include media("<tablet") {
+            grid-row: 3;
+            grid-column: 1 / 23;
         }
 
         h2 {

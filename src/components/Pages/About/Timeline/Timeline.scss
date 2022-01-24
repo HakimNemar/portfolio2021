@@ -15,6 +15,10 @@
             position: relative;
             left: 200px;
         }
+
+        @include media("<mobileL") {
+            left: 155px;
+        }
     }
 
     .rond {
@@ -29,6 +33,10 @@
 
         @include media("<laptop") {
             left: calc(50% + 200px);
+        }
+
+        @include media("<mobileL") {
+            left: calc(50% + 155px);
         }
     }
 
@@ -71,13 +79,37 @@
             padding: 10px 15px 15px;
         }
 
+        @include media("<mobileXL") {
+            left: calc(50% - 25px);
+            width: 350px;
+        }
+
+        @include media("<mobileL") {
+            width: 80%;
+        }
+
         .title {
             font-size: 20px;
             line-height: 29px;
+
+            @include media("<mobileL") {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
 
         .entreprise {
             margin-top: 10px;
+
+            @include media("<mobileL") {
+                font-size: 12px;
+            }
+        }
+
+        .ecole {
+            @include media("<mobileL") {
+                font-size: 12px;
+            }
         }
 
         .divLogo {
@@ -131,7 +163,16 @@
                     bottom: 0;
                     margin: auto;
                     right: -49px;
+
+                    @include media("<mobileL") {
+                        width: 20px;
+                        right: -45px;
+                    }
                 }
+            }
+
+            @include media("<mobileL") {
+                font-size: 12px;
             }
         }
     }

@@ -51,6 +51,10 @@ body {
 			margin-bottom: 140px;
 		}
 
+		@include media("<mobileXL") {
+			margin-bottom: 80px;
+		}
+
 		.title {
 			font-family: "Playfair Display SC";
 			letter-spacing: 0.4em;
@@ -66,6 +70,8 @@ body {
 			bottom: 20px;
 			color: #ebebec;
 			z-index: -1;
+			display: flex;
+			// overflow: hidden;
 
 			@include media("<laptopM") {
 				font-size: 100px;

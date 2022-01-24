@@ -36,6 +36,16 @@
             line-height: 80px;
         }
 
+        @include media("<mobileXL") {
+            font-size: 45px;
+            line-height: 50px;
+        }
+
+        @include media("<mobileL") {
+            font-size: 40px;
+            line-height: 45px;
+        }
+
         div {
             overflow: hidden;
         }
@@ -47,6 +57,14 @@
         .seconde {
             animation: 2s fadeTitle2;
             margin-left: 100px;
+
+            @include media("<mobileXL") {
+                margin-left: 50px;
+            }
+
+            @include media("<mobileL") {
+                margin-left: 14px;
+            }
         }
 
         .third {
@@ -69,6 +87,15 @@
             font-size: 18px;
             padding-top: 50px;
         }
+
+        @include media("<mobileXL") {
+            font-size: 14px;
+            width: fit-content;
+        }
+
+        @include media("<mobileL") {
+            font-size: 13px;
+        }
     }
 
     .blend {
@@ -85,5 +112,9 @@
         z-index: 1;
         transition: transform 0.5s ease-out;
         animation: 2s blend;
+
+        @include media("<mobileXL") {
+            height: 160px;
+        }
     }
 }

@@ -1,20 +1,25 @@
 import { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
 import Timeline from './Timeline/Timeline';
+import { ScrollTitle } from '../../Common/scrollTitle';
 
 export default function About() {
     const section = useRef(null);
+    const title = useRef(null);
 
     useEffect(() => {
         new Parallax({
             element: [section.current]
         });
+        new ScrollTitle(
+            title.current
+        )
     }, []);
 
     return (
         <section id="about" className="about" ref={section}>
             <div className="titleGroup">
-                <h1 className="title">Parcours</h1>
+                <h1 className="title" ref={title}><span className='text'>Parcours</span></h1>
                 <h2 className="title2">Mes Éxperiences</h2>
             </div>
             <p className="aboutMe">

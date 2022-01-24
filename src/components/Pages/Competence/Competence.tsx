@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
 import { BoxAnim } from '../../Common/boxAnim';
+import { ScrollTitle } from '../../Common/scrollTitle';
 
 export default function Competence() {
     const section = useRef(null);
     const skillBar = useRef(new Array());
+    const title = useRef(null);
 
     // Animation ajouter un petit bonome qui pousse la skillbar de frontend
 
@@ -15,12 +17,15 @@ export default function Competence() {
         new BoxAnim({
             element: [skillBar.current]
         });
+        new ScrollTitle(
+            title.current
+        )
     }, []);
 
     return (
         <section id="competence" className="competence" ref={section}>
             <div className="titleGroup">
-                <h1 className="title">à votre service</h1>
+                <h1 className="title" ref={title}><span className='text'>à votre service</span></h1>
                 <h2 className="title2">Mes Compétences</h2>
             </div>
 
