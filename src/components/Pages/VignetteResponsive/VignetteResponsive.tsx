@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { Parallax } from '../../Common/parallax';
 
 export default function VignetteResponsive() {
     const section = useRef(null);
