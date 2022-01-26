@@ -28,7 +28,7 @@ export default function Intro() {
                     <div className="third">Web.</div>
                 </div>
             </h1>
-            <h3>Bienvenue sur mon Portfolio ! Réalisée en 2021 par mes soins</h3>
+            <h3>Bienvenue sur mon Portfolio ! Réalisé en 2021 par mes soins</h3>
         </section>
     )
 }

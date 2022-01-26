@@ -64,7 +64,7 @@ export default function Competence() {
                     <ul>
                         <li>Création de site</li>
                         <li>Adaptation résponsive</li>
-                        <li>Prise en main des sites déjà développer</li>
+                        <li>Prise en main des sites déjà développers</li>
                         <li>Maintenance</li>
                         <li>Création de nouvelles pages</li>
                     </ul>
@@ -73,9 +73,9 @@ export default function Competence() {
                     <h2>Gestion de projet web</h2>
                     <ul>
                         <li>Analyse du projet (avec maquette)</li>
-                        <li>Connception (analyse fonctionnelle, arborescence détaillée des contenus)</li>
+                        <li>Conception (analyse fonctionnelle, arborescence détaillée des contenus)</li>
                         <li>Estimation du temps de travail</li>
-                        <li>Mise en place des environnement de développement (local, dev, prod)</li>
+                        <li>Mise en place des environnements de développement (local, dev, prod)</li>
                         <li>Développement</li>
                     </ul>
                 </div>
