@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
 import { ScrollTitle } from '../../Common/scrollTitle';
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
     const section = useRef(null);
@@ -39,24 +39,20 @@ export default function Contact() {
 
     useEffect(() => {
         if (isReady) {
-            // setIsReady(false);
-            // emailjs.sendForm('gmail', 'template_kuMy2OpZ', form, 'user_5VwJPxWIJ4W9EYRUBTIdl').then((result) => {
-            //     $("#name").val("");
-            //     $("#email").val("");
-            //     $("#message").val("");
-            //     setName("");
-            //     setEmail("");
-            //     setMessage("");
-            //     setForm("");
-            //     console.log('good', result.text);
-            // }, (error) => {
-            //     console.log('bad', error.text);
-            // });
-            console.log(form);
+            setIsReady(false);
+            emailjs.sendForm('service_7z1o7cn', 'template_urpui8s', form, 'user_kBoLSLqms1kOQ3DesT5Kz').then((result) => {
+                (document.getElementById("name") as HTMLInputElement).value = "";
+                (document.getElementById("email") as HTMLInputElement).value = "";
+                (document.getElementById("message") as HTMLInputElement).value = "";
+                setName("");
+                setEmail("");
+                setMessage("");
+                setForm("");
+                document.getElementById('validate')?.classList.add('fadeInUpValidate');
+            }, (error) => {
+                console.log('bad', error.text);
+            });
         }
-        console.log(isInvalid);
-
-
     }, [isReady, form]);
 
     useEffect(() => {
@@ -70,7 +66,6 @@ export default function Contact() {
 
     return (
         <section id="contact" className="contact" ref={section}>
-
             <div className="titleGroup">
                 <h1 className="title" ref={title}><span className='text'>Contact</span></h1>
                 <h2 className="title2">Le début d'une collaboration ?</h2>
@@ -80,27 +75,26 @@ export default function Contact() {
                 <div className="my-5">
                     <div className="input-field ">
                         <input id="name" type="text" className={"validate " + (isInvalid.name && "invalid is-invalid")} name="name" placeholder='Nom' onChange={(e) => setName(e.target.value)} />
-                        {/* <label htmlFor="name" className="labelContact">Nom</label> */}
                         <span className='required'>*</span>
                     </div>
                     <div className={"invalid-feedback " + (isInvalid.name !== undefined ? 'alerte' : '')}>{isInvalid.name}</div>
 
                     <div className="input-field">
                         <input id="email" type="email" className={"validate " + (isInvalid.email && "invalid is-invalid")} name="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
-                        {/* <label htmlFor="email" className="labelContact">Email</label> */}
                         <span className='required'>*</span>
                     </div>
                     <div className={"invalid-feedback " + (isInvalid.email !== undefined ? 'alerte' : '')}>{isInvalid.email}</div>
 
                     <div className="input-field">
                         <textarea id="message" typeof="text" className={"materialize-textarea validate " + (isInvalid.message && "invalid is-invalid")} name="message" placeholder='Message' onChange={(e) => setMessage(e.target.value)} />
-                        {/* <label htmlFor="message" className="labelContact">Message</label> */}
                         <span className='required'>*</span>
                     </div>
                     <div className={"invalid-feedback " + (isInvalid.message !== undefined ? 'alerte' : '')}>{isInvalid.message}</div>
-
                 </div>
-                <input className="send" type="submit" value="Envoyer" />
+                <div className='formSend'>
+                    <input className="send" type="submit" value="Envoyer" />
+                    <div id='validate'>&#10003;</div>
+                </div>
             </form>
         </section>
     )

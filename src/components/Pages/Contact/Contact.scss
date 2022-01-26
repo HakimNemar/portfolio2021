@@ -81,16 +81,36 @@
             overflow: hidden;
         }
 
-        .send {
-            background-color: $secondary;
-            color: #fff;
-            padding: 13px 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            transition: all 0.3s;
+        .formSend {
+            display: flex;
+            justify-content: space-between;
 
-            &:hover {
-                background-color: $primary;
+            .send {
+                background-color: $secondary;
+                color: #fff;
+                padding: 13px 20px;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+
+            #validate {
+                font-size: 32px;
+                color: green;
+                padding: 5px 30px;
+                background-color: #cef0ce;
+                animation-duration: 1s;
+                opacity: 0;
+                transition: all 1s;
+            }
+
+            .fadeInUpValidate {
+                opacity: 1 !important;
+                animation-name: fadeInUpValidate;
             }
         }
     }
