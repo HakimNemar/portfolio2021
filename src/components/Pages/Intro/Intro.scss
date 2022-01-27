@@ -132,6 +132,10 @@
         text-transform: uppercase;
         z-index: 3;
 
+        @media (max-width: 767px) {
+            bottom: 0;
+        }
+
         .button {
             display: block;
             position: relative;
@@ -180,9 +184,4 @@
             }
         }
     }
-    // @media (max-width: 767px) {
-    //     .callToScroll {
-    //         bottom: 0;
-    //     }
-    // }
 }
