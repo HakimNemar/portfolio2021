@@ -17,6 +17,7 @@
     }
 
     @include media("<mobileXL") {
+        padding-top: 150px;
         padding-bottom: 160px;
     }
 
