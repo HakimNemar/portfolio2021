@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio2021/static/css/main.9377efbd.chunk.css",
-    "main.js": "/portfolio2021/static/js/main.e56a4d46.chunk.js",
-    "main.js.map": "/portfolio2021/static/js/main.e56a4d46.chunk.js.map",
-    "runtime-main.js": "/portfolio2021/static/js/runtime-main.0d32ebd4.js",
-    "runtime-main.js.map": "/portfolio2021/static/js/runtime-main.0d32ebd4.js.map",
+    "main.js": "/portfolio2021/static/js/main.b0083bd2.chunk.js",
+    "main.js.map": "/portfolio2021/static/js/main.b0083bd2.chunk.js.map",
+    "runtime-main.js": "/portfolio2021/static/js/runtime-main.03170bd5.js",
+    "runtime-main.js.map": "/portfolio2021/static/js/runtime-main.03170bd5.js.map",
     "static/js/2.41946f36.chunk.js": "/portfolio2021/static/js/2.41946f36.chunk.js",
     "static/js/2.41946f36.chunk.js.map": "/portfolio2021/static/js/2.41946f36.chunk.js.map",
-    "static/js/3.174f1c8e.chunk.js": "/portfolio2021/static/js/3.174f1c8e.chunk.js",
-    "static/js/3.174f1c8e.chunk.js.map": "/portfolio2021/static/js/3.174f1c8e.chunk.js.map",
+    "static/js/3.c9887cc7.chunk.js": "/portfolio2021/static/js/3.c9887cc7.chunk.js",
+    "static/js/3.c9887cc7.chunk.js.map": "/portfolio2021/static/js/3.c9887cc7.chunk.js.map",
     "index.html": "/portfolio2021/index.html",
     "static/css/main.9377efbd.chunk.css.map": "/portfolio2021/static/css/main.9377efbd.chunk.css.map",
     "static/js/2.41946f36.chunk.js.LICENSE.txt": "/portfolio2021/static/js/2.41946f36.chunk.js.LICENSE.txt",
@@ -39,13 +39,14 @@
     "static/media/logo2.svg": "/portfolio2021/static/media/logo2.62cb4dc9.svg",
     "static/media/portfolio.jpg": "/portfolio2021/static/media/portfolio.90f16cac.jpg",
     "static/media/puissance4.jpg": "/portfolio2021/static/media/puissance4.bb2cbc47.jpg",
-    "static/media/responsive.png": "/portfolio2021/static/media/responsive.796417b2.png",
+    "static/media/responsive.png": "/portfolio2021/static/media/responsive.ad521774.png",
+    "static/media/responsive2.png": "/portfolio2021/static/media/responsive2.796417b2.png",
     "static/media/sage.png": "/portfolio2021/static/media/sage.30f2741c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d32ebd4.js",
+    "static/js/runtime-main.03170bd5.js",
     "static/js/2.41946f36.chunk.js",
     "static/css/main.9377efbd.chunk.css",
-    "static/js/main.e56a4d46.chunk.js"
+    "static/js/main.b0083bd2.chunk.js"
   ]
 }
