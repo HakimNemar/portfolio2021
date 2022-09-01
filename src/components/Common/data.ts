@@ -77,6 +77,18 @@ export const DataParcours = [
 
 export const DataRealisations = [
     {
+        title: "Second Life",
+        description: "Second Life a pour vocation de servir les Opérateurs immobiliers de la Rénovation et de la Promotion.",
+        url: "https://secondlife-reim.com/",
+        img: "secondlife.jpg"
+    },
+    {
+        title: "Tolefi",
+        description: "Tolefi promotions réalise des projets immobiliers résidentiels et tertiaires.",
+        url: "https://tolefi.com/",
+        img: "tolefi.jpg"
+    },
+    {
         title: "Groupe Duval",
         description: "Acteur familial français de l’immobilier employant plus de 4 000 collaborateurs pour un CA de 700 millions d’euros.",
         url: "https://groupeduval.com/",
@@ -91,7 +103,7 @@ export const DataRealisations = [
     {
         title: "LaFrenchCom",
         description: "Une agence de conseil en communication de crise.",
-        url: "http://www.lafrenchcom.fr/",
+        url: "https://www.lafrenchcom.fr/",
         img: "lafrenchcom.jpg"
     },
     {
@@ -106,16 +118,16 @@ export const DataRealisations = [
     //     url: "http://our-snapchat.surge.sh/",
     //     img: "lafrenchcom.jpg"
     // },
-    {
-        title: "Portfolio 2020",
-        description: "Mon premier portfolio réaliser lors de ma première année",
-        url: "https://hakimnemar.github.io/portfolio/#/",
-        img: "portfolio.jpg"
-    },
-    {
-        title: "Puissance4",
-        description: "Création d'un plugin jQuery pour un puissance 4 dynamique.",
-        url: "https://mypuissance4.herokuapp.com/",
-        img: "puissance4.jpg"
-    }
+    // {
+    //     title: "Portfolio 2020",
+    //     description: "Mon premier portfolio réaliser lors de ma première année",
+    //     url: "https://hakimnemar.github.io/portfolio/#/",
+    //     img: "portfolio.jpg"
+    // },
+    // {
+    //     title: "Puissance4",
+    //     description: "Création d'un plugin jQuery pour un puissance 4 dynamique.",
+    //     url: "https://mypuissance4.herokuapp.com/",
+    //     img: "puissance4.jpg"
+    // }
 ]
