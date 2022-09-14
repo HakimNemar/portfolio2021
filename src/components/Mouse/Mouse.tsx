@@ -13,7 +13,7 @@ export default function Mouse() {
     };
 
     const attachEvents = () => {
-        document.querySelectorAll('button, a, [data-cursor-hover]')
+        document.querySelectorAll('button, a, [data-cursor-hover="true"]')
             .forEach((el) => {
                 el.addEventListener('mouseenter', () => setHover(true));
                 el.addEventListener('mouseleave', () => setHover(false));

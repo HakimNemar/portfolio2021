@@ -1,0 +1,80 @@
+.carousel {
+    grid-row: 3;
+    grid-column: 1 / 23;
+    margin: 50px 0;
+    display: flex;
+    position: relative;
+
+    .cart {
+        color: $beige2;
+        transition: all 0.3s;
+
+        &:not(.active):hover {
+            color: $primary;
+
+            .box {
+                hr {
+                    &::before {
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+
+        .box {
+            width: 260px;
+            height: 180px;
+            text-align: center;
+
+            > div {
+                height: 70px;
+                display: flex;
+                align-items: flex-end;
+                text-align: center;
+            }
+
+            h2,
+            h3 {
+                font-size: 22px;
+                padding: 0 5px;
+            }
+
+            h2 {
+                flex: auto;
+            }
+
+            hr {
+                margin: 40px 0;
+                color: $beige2;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: $beige2;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+
+    .active {
+        color: $secondary;
+
+        .box {
+            hr {
+                &::before {
+                    background-color: $secondary;
+                }
+            }
+        }
+    }
+}

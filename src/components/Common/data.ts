@@ -36,7 +36,8 @@ export const DataParcours = [
         logo: "icts.png"
     },
     {
-        title: "Certificat de Qualification Professionnelle Agent de Sûreté Aéroportuaire",
+        // title: "Certificat de Qualification Professionnelle Agent de Sûreté Aéroportuaire",
+        title: "CQP Agent de Sûreté Aéroportuaire",
         ecole: "ICTS France Training",
         // contrat: "CDD",
         date: "2017",
@@ -56,7 +57,8 @@ export const DataParcours = [
         logo: "lycee.png"
     },
     {
-        title: "Bac Sciences et Technologies du Management et de la Gestion (STMG)",
+        // title: "Bac Sciences et Technologies du Management et de la Gestion (STMG)",
+        title: "Bac STMG Gestion Finance",
         ecole: "Lycée Paul Eluard",
         date: "2015",
         logo: "paris8.png"
@@ -70,7 +72,7 @@ export const DataParcours = [
     {
         title: "Assistant Informatique",
         entreprise: "SAGE",
-        date: "2010 / 2011",
+        date: "2011",
         logo: "sage.png"
     }
 ];
