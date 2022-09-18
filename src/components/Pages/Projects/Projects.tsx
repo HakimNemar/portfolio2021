@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
-import { ScrollTitle } from '../../Common/scrollTitle';
+import { ScrollTitle } from '../../Common/scrollTitleMobile';
 import Realisations from './Realisations/Realisations';
 
 // creer function qui creer un projets pour l'afficher ici en bouclant dessus cme thebuyer 

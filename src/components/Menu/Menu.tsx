@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react'
-import BtnMenu from '../BtnMenu/BtnMenu';
+import BtnMenu from './BtnMenu/BtnMenu';
 import Github from '../../assets/img/github.png';
 import Linkedin from '../../assets/img/linkedin.png';
 import CV from '../../assets/img/cv.png';
@@ -26,7 +26,7 @@ export default function Menu() {
             <BtnMenu menu={themenu} />
 
             <div className='menu' id="menu" ref={menu}>
-                <ul className='nav'>
+                <ul className='navMobile'>
                     {menuLinks.map((element, id) => {
                         return <li key={id}><a href={`#${element}`}>{element}</a></li>
                     })}

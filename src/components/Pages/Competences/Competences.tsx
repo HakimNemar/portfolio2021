@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
 import { BoxAnim } from '../../Common/boxAnim';
-import { ScrollTitle } from '../../Common/scrollTitle';
+import { ScrollTitle } from '../../Common/scrollTitleMobile';
 
-export default function Competence() {
+export default function Competences() {
     const section = useRef(null);
     const skillBar = useRef(new Array());
     const title = useRef(null);
@@ -23,7 +23,7 @@ export default function Competence() {
     }, []);
 
     return (
-        <section id="competence" className="competence" ref={section}>
+        <section id="competences" className="competence" ref={section}>
             <div className="titleGroup">
                 <h1 className="title" ref={title}><span className='text'>à votre service</span></h1>
                 <h2 className="title2">Mes Compétences</h2>

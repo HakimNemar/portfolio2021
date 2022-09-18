@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
-import { ScrollTitle } from '../../Common/scrollTitle';
+import { ScrollTitle } from '../../Common/scrollTitleMobile';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
 import Timeline from './Timeline/Timeline';
 // import Carousel from './Carousel/Carousel';
-import { ScrollTitle } from '../../Common/scrollTitle';
+import { ScrollTitle } from '../../Common/scrollTitleMobile';
 
 export default function About() {
     const section = useRef(null);

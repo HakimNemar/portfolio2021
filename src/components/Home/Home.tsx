@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from '../Header/Header';
 import Intro from '../Pages/Intro/Intro';
-import Competence from '../Pages/Competence/Competence';
+import Competences from '../Pages/Competences/Competences';
 import Projects from '../Pages/Projects/Projects';
 import About from '../Pages/About/About';
 import VignetteResponsive from '../Pages/VignetteResponsive/VignetteResponsive';
@@ -31,7 +31,7 @@ export default function Index() {
 
             <Intro />
 
-            <Competence />
+            <Competences />
 
             <Projects />
 
