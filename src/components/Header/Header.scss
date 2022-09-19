@@ -133,6 +133,14 @@
                     }
                 }
             }
+
+            .active {
+                a {
+                    &::before {
+                        transform: translateY(100%);
+                    }
+                }
+            }
         }
     }
 

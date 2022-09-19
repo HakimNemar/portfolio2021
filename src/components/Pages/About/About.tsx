@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
 import Timeline from './Timeline/Timeline';
-// import Carousel from './Carousel/Carousel';
+import Carousel from './Carousel/Carousel';
 import { ScrollTitle } from '../../Common/scrollTitleMobile';
 
 export default function About() {
@@ -26,8 +26,8 @@ export default function About() {
             <p className="aboutMe">
                 Tout d'abord, bienvenue sur mon portfolio ! Je me présente, je suis Hakim Nemar intégrateur développeur web. Avant de vous aventurer plus loin, il est préférable que vous sachiez un petit bout de ma personne. De nature curieux, je sais rester logique et je suis prêt à me surpasser. Si j'aime l'informatique, c'est parce qu'il s'agit d'un domaine en perpétuelle évolution. On apprend sans arrêt et c'est ce qui me passionne le plus, d'où la création de ce portefeuille qui a pour objectif de vous montrer ma personne à travers ma passion.
             </p>
-            {/* <Carousel /> */}
-            <Timeline />
+            <Carousel />
+            {/* <Timeline /> */}
         </section>
     )
 }
