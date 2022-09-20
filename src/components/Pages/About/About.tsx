@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
-import Timeline from './Timeline/Timeline';
+// import Timeline from './Timeline/Timeline';
 import Carousel from './Carousel/Carousel';
 import { ScrollTitle } from '../../Common/scrollTitleMobile';
 

@@ -1,80 +1,160 @@
-.carousel {
+.timeLine {
     grid-row: 3;
     grid-column: 1 / 23;
-    margin: 50px 0;
-    display: flex;
     position: relative;
 
-    .cart {
-        color: $beige2;
-        transition: all 0.3s;
+    .carousel {
+        margin: 50px 20px;
+        overflow: hidden;
 
-        &:not(.active):hover {
-            color: $primary;
+        .overview {
+            display: flex;
+            position: relative;
+            transition: transform 0.3s;
 
-            .box {
-                hr {
-                    &::before {
-                        background-color: $primary;
+            li {
+                position: relative;
+                flex: 0 0 100%;
+                display: flex;
+                padding: 0 50px;
+                justify-content: center;
+
+                .divLogo {
+                    width: 40%;
+                    text-align: center;
+
+                    .logo {
+                        width: 80%;
+                        height: auto;
+                    }
+                }
+
+                .content {
+                    width: 60%;
+                    margin: 15px 30px;
+
+                    h3 {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+
+                    h6 {
+                        color: $red;
                     }
                 }
             }
         }
 
-        .box {
-            width: 260px;
-            height: 180px;
-            text-align: center;
+        .slide {
+            display: flex;
+            position: relative;
+            transition: transform 0.3s;
 
-            > div {
-                height: 70px;
-                display: flex;
-                align-items: flex-end;
-                text-align: center;
+            .active {
+                color: $secondary;
+
+                &::after {
+                    background-color: $secondary;
+                }
             }
 
-            h2,
-            h3 {
-                font-size: 22px;
-                padding: 0 5px;
-            }
-
-            h2 {
-                flex: auto;
-            }
-
-            hr {
-                margin: 40px 0;
-                color: $beige2;
+            li {
                 position: relative;
+                flex: 0 0 (100% / 4);
+                text-align: center;
+                padding: 0 30px;
+                color: $grey2;
+                height: 130px;
 
                 &::before {
                     content: "";
                     position: absolute;
-                    width: 20px;
-                    height: 20px;
+                    height: 1px;
+                    width: 100%;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    background-color: $grey2;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
                     border-radius: 50%;
-                    background-color: $beige2;
                     top: 0;
                     bottom: 0;
                     left: 0;
                     right: 0;
                     margin: auto;
-                    transition: all 0.3s;
+                    background-color: $grey2;
+                }
+
+                > div {
+                    height: 100%;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 18px;
+                    }
+
+                    h3 {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
                 }
             }
         }
     }
+    .prev,
+    .next {
+        position: absolute;
+        width: 15px;
+        // height: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
 
-    .active {
-        color: $secondary;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 12px;
+            height: 12px;
+            margin: auto;
+            border: 2px solid $grey2;
+            transition: 0.2s all;
+            transform: rotate(45deg);
+        }
 
-        .box {
-            hr {
-                &::before {
-                    background-color: $secondary;
-                }
+        &:hover {
+            &::before {
+                transform: rotate(45deg) scale(1.2);
             }
+        }
+    }
+
+    .prev {
+        &::before {
+            border-right: none;
+            border-top: none;
+        }
+    }
+
+    .next {
+        right: 0;
+
+        &::before {
+            border-left: none;
+            border-bottom: none;
         }
     }
 }
