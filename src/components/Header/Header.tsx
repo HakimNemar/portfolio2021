@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Menu from '../Menu/Menu';
 import { ReactComponent as Logo } from '../../assets/img/logo.svg';
-import background from "../../assets/img/header/test.jpeg";
 
 export default function Header() {
     const menuLinks = [
@@ -47,7 +46,7 @@ export default function Header() {
                 observables.forEach((observable) => {
                     if (observable.intersectionRatio > 0.5) {
                         headerLi.forEach((li) => {
-                            if (li.textContent === observable.target.id || li.textContent === "à propos" && observable.target.id === "about") {
+                            if ((li.textContent === observable.target.id) || (li.textContent === "à propos" && observable.target.id === "about")) {
                                 li.classList.add("active");
                             } else {
                                 li.classList.remove("active");

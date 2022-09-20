@@ -30,7 +30,7 @@ export default function Intro() {
             </h1>
             <h3>Bienvenue sur mon Portfolio ! Réalisé en 2021 par mes soins</h3>
 
-            <a className="callToScroll" href="#competence">
+            <a className="callToScroll" href="#competences">
                 <span className="button"><span></span></span>
             </a>
         </section>
