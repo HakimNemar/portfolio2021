@@ -10,7 +10,8 @@
         .overview {
             display: flex;
             position: relative;
-            transition: transform 0.3s;
+            transition: transform 0.5s;
+            margin-bottom: 20px;
 
             li {
                 position: relative;
@@ -22,24 +23,36 @@
                 .divLogo {
                     width: 40%;
                     text-align: center;
+                    // align-self: center;
 
                     .logo {
-                        width: 80%;
+                        max-width: 55%;
                         height: auto;
                     }
                 }
 
                 .content {
                     width: 60%;
-                    margin: 15px 30px;
+                    margin: 0 30px;
 
-                    h3 {
-                        font-size: 22px;
+                    h2 {
+                        font-size: 34px;
                         font-weight: 600;
                     }
 
-                    h6 {
+                    .date {
+                        margin: 20px 0 5px;
                         color: $red;
+
+                        .contrat {
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .description {
+                        margin: 20px 0;
+                        line-height: 20px;
+                        text-align: justify;
                     }
                 }
             }
@@ -48,7 +61,7 @@
         .slide {
             display: flex;
             position: relative;
-            transition: transform 0.3s;
+            transition: transform 0.5s;
 
             .active {
                 color: $secondary;
@@ -114,8 +127,8 @@
     .prev,
     .next {
         position: absolute;
-        width: 15px;
-        // height: 30px;
+        width: 30px;
+        height: 30px;
         top: 0;
         bottom: 0;
         margin: auto;

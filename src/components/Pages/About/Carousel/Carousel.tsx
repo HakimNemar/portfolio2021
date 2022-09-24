@@ -47,12 +47,12 @@ export default function Carousel() {
 
                                     <div className='content'>
                                         {e.entreprise &&
-                                            <h3 className="entreprise">{e.entreprise}</h3>
+                                            <h2 className="entreprise">{e.entreprise}</h2>
                                             // :
                                             // <br />
                                         }
                                         {e.ecole &&
-                                            <h3 className="ecole">{e.ecole}</h3>
+                                            <h2 className="ecole">{e.ecole}</h2>
                                             // :
                                             // <br />
                                         }
@@ -66,7 +66,8 @@ export default function Carousel() {
                                             </h6>
                                         }
 
-                                        <h2 className="title">{e.title}</h2>
+                                        <h3 className="title">{e.title}</h3>
+                                        <p className='description'>{e.description}</p>
                                     </div>
                                 </li>
                             )
