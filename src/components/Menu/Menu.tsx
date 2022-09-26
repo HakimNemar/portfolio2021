@@ -11,7 +11,7 @@ export default function Menu() {
     const [themenu, setThemenu] = useState<any>(null);
     const menuLinks = [
         // un objet, url et nom
-        'competence',
+        'competences',
         'projets',
         'about',
         'contact'

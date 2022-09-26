@@ -24,10 +24,24 @@ export default function Carousel() {
     }, [index]);
 
     const updatePos = (clientWidth: number) => {
-        if (index < data.length - 3) {
-            slideIndex.style.transform = `translateX(${clientWidth * index}px)`;
-        } else if (index === data.length - 1) {
-            slideIndex.style.transform = `translateX(${clientWidth * (index - 3)}px)`;
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            if (index < data.length - 1) {
+                slideIndex.style.transform = `translateX(${clientWidth * index}px)`;
+            } else if (index === data.length - 1) {
+                slideIndex.style.transform = `translateX(${clientWidth * (index - 1)}px)`;
+            }
+        } else if (window.matchMedia("(max-width: 1023px)").matches) {
+            if (index < data.length - 2) {
+                slideIndex.style.transform = `translateX(${clientWidth * index}px)`;
+            } else if (index === data.length - 1) {
+                slideIndex.style.transform = `translateX(${clientWidth * (index - 2)}px)`;
+            }
+        } else {
+            if (index < data.length - 3) {
+                slideIndex.style.transform = `translateX(${clientWidth * index}px)`;
+            } else if (index === data.length - 1) {
+                slideIndex.style.transform = `translateX(${clientWidth * (index - 3)}px)`;
+            }
         }
         ulOverView.style.transform = `translateX(${-ulOverView.children[0].clientWidth * index}px)`;
     }
@@ -46,15 +60,13 @@ export default function Carousel() {
                                     </div>
 
                                     <div className='content'>
+                                        <img className='logoMobile' src={require(`../../../../assets/img/logo/${e.logo}`).default} alt={e.title} />
+
                                         {e.entreprise &&
                                             <h2 className="entreprise">{e.entreprise}</h2>
-                                            // :
-                                            // <br />
                                         }
                                         {e.ecole &&
                                             <h2 className="ecole">{e.ecole}</h2>
-                                            // :
-                                            // <br />
                                         }
 
                                         {e.date &&
@@ -65,7 +77,6 @@ export default function Carousel() {
                                                 }
                                             </h6>
                                         }
-
                                         <h3 className="title">{e.title}</h3>
                                         <p className='description'>{e.description}</p>
                                     </div>
@@ -74,7 +85,6 @@ export default function Carousel() {
                         })
                     }
                 </ul>
-
                 <ul className="slide">
                     {
                         data.length > 0 &&

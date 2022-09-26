@@ -5,20 +5,23 @@
     @include gridLayout;
 
     @include media("<laptopM") {
-        margin-bottom: -375px;
+        // margin-bottom: -375px;
     }
 
-    @include media("<=tablet") {
-        margin-bottom: -220px;
+    @include media("<laptop") {
+        overflow: visible;
+        margin-top: -90px;
+        // margin-bottom: -220px;
     }
 
     @include media("<mobileXL") {
-        margin-top: -250px;
-        margin-bottom: -405px;
+        overflow: hidden;
+        margin-top: -400px;
+        // margin-bottom: -405px;
     }
 
     @include media("<mobileL") {
-        margin-bottom: -570px;
+        // margin-bottom: -570px;
         padding: 30px;
     }
 

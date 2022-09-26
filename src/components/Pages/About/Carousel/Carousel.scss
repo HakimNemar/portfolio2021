@@ -7,6 +7,10 @@
         margin: 50px 20px;
         overflow: hidden;
 
+        @include media("<tablet") {
+            margin: 0;
+        }
+
         .overview {
             display: flex;
             position: relative;
@@ -20,10 +24,18 @@
                 padding: 0 50px;
                 justify-content: center;
 
+                @include media("<tablet") {
+                    padding: 0;
+                }
+
                 .divLogo {
                     width: 40%;
                     text-align: center;
                     // align-self: center;
+
+                    @include media("<laptop") {
+                        display: none;
+                    }
 
                     .logo {
                         max-width: 55%;
@@ -35,9 +47,21 @@
                     width: 60%;
                     margin: 0 30px;
 
+                    @include media("<laptop") {
+                        width: 100%;
+                    }
+
+                    @include media("<tablet") {
+                        margin-bottom: 20px;
+                    }
+
                     h2 {
                         font-size: 34px;
                         font-weight: 600;
+
+                        @include media("<tablet") {
+                            font-size: 18px;
+                        }
                     }
 
                     .date {
@@ -53,6 +77,27 @@
                         margin: 20px 0;
                         line-height: 20px;
                         text-align: justify;
+
+                        @include media("<tablet") {
+                            display: none;
+                        }
+                    }
+
+                    .logoMobile {
+                        max-width: 200px;
+                        height: auto;
+                        float: left;
+                        margin-right: 25px;
+
+                        @include media(">laptop") {
+                            display: none;
+                        }
+
+                        @include media("<tablet") {
+                            max-width: 100px;
+                            max-height: 85px;
+                            float: right;
+                        }
                     }
                 }
             }
@@ -78,6 +123,16 @@
                 padding: 0 30px;
                 color: $grey2;
                 height: 130px;
+
+                @include media("<laptop") {
+                    flex: 0 0 (100% / 3);
+                }
+
+                @include media("<tablet") {
+                    flex: 0 0 (100% / 2);
+                    padding: 0;
+                    height: 150px;
+                }
 
                 &::before {
                     content: "";
@@ -124,6 +179,7 @@
             }
         }
     }
+
     .prev,
     .next {
         position: absolute;
@@ -132,6 +188,10 @@
         top: 0;
         bottom: 0;
         margin: auto;
+
+        @include media("<tablet") {
+            width: 20px;
+        }
 
         &::before {
             content: "";
