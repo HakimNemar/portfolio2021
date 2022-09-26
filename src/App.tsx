@@ -19,5 +19,3 @@ function App() {
 }
 
 export default App;
-
-// POUR LES TITRES EN MODE MOBILE SCROLL LIKE GROUP DUVAL

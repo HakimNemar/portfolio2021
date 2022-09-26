@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Menu from '../Menu/Menu';
 import { ReactComponent as Logo } from '../../assets/img/logo.svg';
 
@@ -6,39 +6,14 @@ export default function Header() {
     const menuLinks = [
         {
             title: 'competences',
-            // img: '../../assets/img/header/test.jpeg'
         }, {
             title: 'projets',
-            // img: ''
         }, {
             title: 'about',
-            // img: ''
         }, {
             title: 'contact',
-            // img: ''
         }
     ];
-
-    // let observer = new IntersectionObserver(function (observables) {
-    //     observables.forEach((observable) => {
-    //         if (observable.intersectionRatio > 0.5) {
-    //             observable.target.classList.add("visible");
-    //             // observer.unobserve(observable.target);
-    //         } else {
-    //             observable.target.classList.remove("visible");
-    //         }
-    //     })
-    // }, {
-    //     threshold: [0.5]
-    // });
-
-    // let items = document.querySelectorAll("#root section");
-    // items.forEach(function (item) {
-    //     console.log(item);
-
-    //     item.classList.remove("visible");
-    //     observer.observe(item);
-    // });
 
     useEffect(() => {
         let headerLi = (document.querySelectorAll("#header .head > ul li")),

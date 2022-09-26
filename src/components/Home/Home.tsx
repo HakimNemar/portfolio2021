@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Header from '../Header/Header';
 import Intro from '../Pages/Intro/Intro';
 import Competences from '../Pages/Competences/Competences';
