@@ -16,7 +16,10 @@ export default function Header() {
     ];
 
     useEffect(() => {
-        let headerLi = (document.querySelectorAll("#header .head > ul li")),
+        let headerLi = document.querySelectorAll("#header .head > ul li") as NodeListOf<Element>,
+            scrollTop = document.getElementById("scrollTop") as HTMLElement,
+            items = document.querySelectorAll("#root section") as NodeListOf<Element>,
+            lastScroll = 0,
             observer = new IntersectionObserver(function (observables) {
                 observables.forEach((observable) => {
                     if (observable.intersectionRatio > 0.5) {
@@ -27,21 +30,30 @@ export default function Header() {
                                 li.classList.remove("active");
                             }
                         });
-                    } else {
-                        // observable.target.classList.remove("active");
-                    }
+                    } else { /* observable.target.classList.remove("active");*/ }
                 })
             }, {
                 threshold: [0.5]
             });
-
-        let items = document.querySelectorAll("#root section");
 
         items.forEach(function (item) {
             headerLi.forEach((li) => {
                 li.classList.remove("active");
             });
             observer.observe(item);
+        });
+
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > (window.innerHeight / 3)) {
+                if (lastScroll > window.pageYOffset) {
+                    scrollTop.style.transform = "translateY(0)";
+                } else {
+                    scrollTop.style.transform = "translateY(100%)";
+                }
+            } else {
+                scrollTop.style.transform = "translateY(100%)";
+            }
+            lastScroll = window.pageYOffset;
         });
     }, []);
 
@@ -66,6 +78,15 @@ export default function Header() {
                     })}
                 </ul>
             </div>
+
+            <a id="scrollTop" className='scrollTop' href="#intro">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
         </header>
     )
 }
