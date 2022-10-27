@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio2021/static/css/main.e425ab92.chunk.css",
-    "main.js": "/portfolio2021/static/js/main.fa873b80.chunk.js",
-    "main.js.map": "/portfolio2021/static/js/main.fa873b80.chunk.js.map",
+    "main.js": "/portfolio2021/static/js/main.a6cebb52.chunk.js",
+    "main.js.map": "/portfolio2021/static/js/main.a6cebb52.chunk.js.map",
     "runtime-main.js": "/portfolio2021/static/js/runtime-main.67b7288d.js",
     "runtime-main.js.map": "/portfolio2021/static/js/runtime-main.67b7288d.js.map",
     "static/js/2.7ae23f27.chunk.js": "/portfolio2021/static/js/2.7ae23f27.chunk.js",
@@ -28,7 +28,7 @@
     "static/media/Capture d’écran de 2022-09-01 14-41-06.png": "/portfolio2021/static/media/Capture d’écran de 2022-09-01 14-41-06.80d78f5a.png",
     "static/media/Capture d’écran de 2022-09-01 15-08-43.png": "/portfolio2021/static/media/Capture d’écran de 2022-09-01 15-08-43.da0ba120.png",
     "static/media/Capture d’écran de 2022-09-01 15-11-24.png": "/portfolio2021/static/media/Capture d’écran de 2022-09-01 15-11-24.f56c45cc.png",
-    "static/media/NemarHakim.39a6df73.pdf": "/portfolio2021/static/media/NemarHakim.39a6df73.pdf",
+    "static/media/NemarHakim.5cfa336e.pdf": "/portfolio2021/static/media/NemarHakim.5cfa336e.pdf",
     "static/media/style.css": "/portfolio2021/static/media/PublicSans-Regular.296b09a9.ttf",
     "static/media/about.jpeg": "/portfolio2021/static/media/about.e4af8493.jpeg",
     "static/media/adna.jpg": "/portfolio2021/static/media/adna.f877698b.jpg",
@@ -60,6 +60,6 @@
     "static/js/runtime-main.67b7288d.js",
     "static/js/2.7ae23f27.chunk.js",
     "static/css/main.e425ab92.chunk.css",
-    "static/js/main.fa873b80.chunk.js"
+    "static/js/main.a6cebb52.chunk.js"
   ]
 }
