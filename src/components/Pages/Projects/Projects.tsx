@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
 import { ScrollTitle } from '../../Common/scrollTitleMobile';
-import Realisations from './Realisations/Realisations';
+import RealisationsTest from './Realisations/test';
+// import Realisations from './Realisations/Realisations';
 
 // creer function qui creer un projets pour l'afficher ici en bouclant dessus cme thebuyer 
 // passer un tableau d'objet a l'appel du component pour boucler ici et afficher tout les projet dans ce module
@@ -26,7 +27,8 @@ export default function Projects() {
                 <h2 className="title2">Mes réalisations</h2>
             </div>
 
-            <Realisations />
+            {/* <Realisations /> */}
+            <RealisationsTest />
 
             {/* Mes contributions */}
         </section>

@@ -151,3 +151,65 @@ export const DataRealisations = [
     //     img: "puissance4.jpg"
     // }
 ]
+
+export const DataRealisationsTest = [
+    {
+        title: "Second Life",
+        date: "2022",
+        description: "Second Life a pour vocation de servir les Opérateurs immobiliers de la Rénovation et de la Promotion.",
+        url: "https://secondlife-reim.com/",
+        video: "tolefi.mp4"
+    },
+    {
+        title: "Tolefi",
+        date: "2022",
+        description: "Tolefi promotions réalise des projets immobiliers résidentiels et tertiaires.",
+        url: "https://tolefi.com/",
+        video: "tolefi.mp4"
+    },
+    // {
+    //     title: "Groupe Duval",
+    // date: "2021",
+    //     description: "Acteur familial français de l’immobilier employant plus de 4 000 collaborateurs pour un CA de 700 millions d’euros.",
+    //     url: "https://groupeduval.com/",
+    //     video: "tolefi.mp4"
+    // },
+    // {
+    //     title: "ADNA",
+    // date: "2020",
+    //     description: "ADNA est le résultat d’une fusion de 4 cabinets d’avocat performant en afrique.",
+    //     url: "https://adnalaw.com/",
+    //     video: "tolefi.mp4"
+    // },
+    // {
+    //     title: "LaFrenchCom",
+    // date: "2020",
+    //     description: "Une agence de conseil en communication de crise.",
+    //     url: "https://www.lafrenchcom.fr/",
+    //     video: "tolefi.mp4"
+    // },
+    // {
+    //     title: "Blueprint.",
+    //     description: "Site E-commerce avec espace utilisateur et back admin complet. (statistiques, gestion de stock etc...).",
+    //     url: "https://e-8commerce-client.herokuapp.com/",
+    //     video: "tolefi.mp4"
+    // },
+    // {
+    //     title: "My Snapchat",
+    //     description: "Reproduction des fonctionnalité de Snapchat en utilisant l'API fournie par EPITECH.",
+    //     url: "http://our-snapchat.surge.sh/",
+    //     img: "lafrenchcom.jpg"
+    // },
+    // {
+    //     title: "Portfolio 2020",
+    //     description: "Mon premier portfolio réaliser lors de ma première année",
+    //     url: "https://hakimnemar.github.io/portfolio/#/",
+    //     img: "portfolio.jpg"
+    // },
+    // {
+    //     title: "Puissance4",
+    //     description: "Création d'un plugin jQuery pour un puissance 4 dynamique.",
+    //     url: "https://mypuissance4.herokuapp.com/",
+    //     img: "puissance4.jpg"
+    // }
+]
