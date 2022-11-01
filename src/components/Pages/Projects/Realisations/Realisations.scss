@@ -193,24 +193,41 @@
                 padding: 10px;
                 width: max-content;
                 overflow: hidden;
+                border-left: 1px solid $primary;
 
                 &::before {
                     content: "";
                     position: absolute;
-                    left: -20px;
+                    left: -25px;
                     top: -30px;
                     width: 30px;
                     width: 30px;
                     height: 300%;
-                    background-color: $beige2;
+                    background-color: $primary;
                     transition: all 0.5s;
                     transform: rotate(35deg);
                     mix-blend-mode: exclusion;
                 }
 
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    border-top: 1px solid $primary;
+                    border-bottom: 1px solid $primary;
+                    left: 0;
+                    top: 0;
+                    width: 0;
+                    transition: all 0.5s;
+                }
+
                 &:hover {
                     &::before {
-                        left: 90%;
+                        left: 92%;
+                    }
+
+                    &::after {
+                        width: 100%;
                     }
                 }
             }
