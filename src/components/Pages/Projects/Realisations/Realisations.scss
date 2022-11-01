@@ -218,7 +218,55 @@
 
         .ProjectThumbnail_figure {
             width: 70%;
+            height: max-content;
             margin-left: 50px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background-color: rgba($primary, 0.7);
+                border-radius: 50%;
+                transition: all 0.3s;
+                box-shadow: 0 0 20px #fff;
+                z-index: -1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                right: 0;
+                left: 6px;
+                margin: auto;
+                width: 0;
+                height: 0;
+                border: 14px solid transparent;
+                border-right: none;
+                border-left: 20px solid #fff;
+                transition: all 0.3s;
+                z-index: -1;
+            }
+
+            &:hover {
+                &::before {
+                    width: 95px;
+                    height: 95px;
+                    background-color: rgba(#000, 0.7);
+                }
+
+                &::after {
+                    border-left: 20px solid $tertiaire;
+                }
+            }
 
             @include media("<laptop") {
                 width: 100%;
@@ -228,6 +276,8 @@
             video {
                 box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
                 width: 100%;
+                position: relative;
+                z-index: -2;
             }
         }
     }
