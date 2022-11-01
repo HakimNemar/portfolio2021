@@ -3,7 +3,6 @@ import { DataRealisationsTest } from '../../../Common/data';
 
 export default function RealisationsTest() {
     const [data, setData] = useState(Array);
-    const [isPlaying, setIsPlaying] = useState(false);
 
     useEffect(() => {
         setData(DataRealisationsTest);
@@ -12,27 +11,13 @@ export default function RealisationsTest() {
     const handleClick = (e: SyntheticEvent) => {
         let element = e.target as HTMLElement;
 
-
         if (element.tagName === "VIDEO") {
-            // if (isPlaying) {
-            //     setIsPlaying(false);
-            //     element.style.zIndex = "-2";
-            //     (element as HTMLVideoElement).pause();
-            // }
-
             if ((element as HTMLVideoElement).paused) {
-
             } else {
                 (element as HTMLVideoElement).pause();
                 element.style.zIndex = "-2";
             }
         } else {
-            // if (!isPlaying) {
-            //     setIsPlaying(true);
-            //     (element.children[0] as HTMLElement).style.zIndex = "1";
-            //     (element.children[0] as HTMLVideoElement).play();
-            // }
-
             if ((element.children[0] as HTMLVideoElement).paused) {
                 (element.children[0] as HTMLVideoElement).play();
                 (element.children[0] as HTMLElement).style.zIndex = "1";
