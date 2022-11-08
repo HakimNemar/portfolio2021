@@ -38,6 +38,7 @@
             align-self: center;
 
             @include media("<laptop") {
+                text-align: left;
                 padding: 0;
             }
 
