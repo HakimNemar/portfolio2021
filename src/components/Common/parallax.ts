@@ -64,7 +64,7 @@ export class Parallax {
             // }
 
             // const transform = `translate3d(0, -${factor * 5}%, 0)`;
-            const transform = `translateY(-${factor * 5}%)`;
+            const transform = `translateY(-${factor * 1.5}%)`;
             e.style.transform = transform;
 
             // const brightness = factor * -0.7 + 1;

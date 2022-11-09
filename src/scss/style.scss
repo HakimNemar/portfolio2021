@@ -5,7 +5,7 @@
 @import "../../node_modules/include-media/dist/include-media";
 
 @include fontD("Playfair Display SC", "PlayfairDisplay-VariableFont_wght.ttf");
-@include fontP("Public Sans - Thin _ Regular", "PublicSans-Regular.ttf");
+@include fontP("Public_Sans-Thin_Regular", "PublicSans-Regular.ttf");
 
 html {
 	color: $black;
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-	font-family: "Public Sans - Thin _ Regular";
+	font-family: "Public_Sans-Thin_Regular";
 	cursor: none;
 
 	.titleGroup {

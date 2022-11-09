@@ -11,5 +11,9 @@
         padding-top: 130px;
     }
 
+    @include media("<tablet") {
+        padding-bottom: 0px;
+    }
+
     @import "./Realisations/Realisations.scss";
 }
