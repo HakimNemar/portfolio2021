@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Parallax } from '../../Common/parallax';
 import { ScrollTitle } from '../../Common/scrollTitleMobile';
-import RealisationsTest from './Realisations/test';
+import Realisations from './Realisations/Realisations';
 // import Realisations from './Realisations/Realisations';
 
 // creer function qui creer un projets pour l'afficher ici en bouclant dessus cme thebuyer 
@@ -28,9 +28,7 @@ export default function Projects() {
             </div>
 
             {/* <Realisations /> */}
-            <RealisationsTest />
-
-            {/* Mes contributions */}
+            <Realisations />
         </section>
     )
 }
